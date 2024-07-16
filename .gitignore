@@ -2,4 +2,4 @@
 .terraform.lock.hcl
 terraform.tfstate
 terraform.tfstate.backup
-jenkins_server_provision_script.sh
+provisioning_scripts/jenkins_server_provision_script.sh

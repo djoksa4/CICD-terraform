@@ -87,7 +87,7 @@ resource "aws_instance" "jenkins_server_instance" {
     Name = "jenkins-server"
   }
 
-  user_data = file("jenkins_server_provision_script.sh")
+  user_data = file("${path.module}/provisioning_scripts/jenkins_server_provision_script.sh")
 }
 
 resource "aws_instance" "app_server_instance" {
@@ -104,7 +104,7 @@ resource "aws_instance" "app_server_instance" {
     Name = "app-server"
   }
 
-  user_data = file("app_server_provision_script.sh")
+  user_data = file("${path.module}/provisioning_scripts/app_server_provision_script.sh")
 }
 
 
